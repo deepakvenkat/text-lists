@@ -1,0 +1,22 @@
+{
+  "name": "text-callback",
+  "version": "0.0.1",
+  "author": "deepakveknat",
+
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:deepakvenkat/text-lists.git"
+  },
+  "main": "app.js",
+  "dependencies": {
+    "async": "x.x.x",
+    "body-parser": "x.x.x",
+    "connect": "x.x.x",
+    "method-override" : "x.x.x",
+    "express": "3.x",
+    "lodash": "^2.4.1",
+    "nconf": "^0.6.9",
+    "underscore": "x.x.x",
+    "underscore.string": "^2.3.3"
+  }
+}
