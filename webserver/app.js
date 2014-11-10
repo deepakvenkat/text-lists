@@ -7,6 +7,7 @@ var express = require('express'),
 	methodOverride = require("method-override"),
 	util = require("util"), 
 	config = require("./config"),
+	routes = require("./routes"),
 	appConfig;
 
 
@@ -23,6 +24,7 @@ function startApp () {
 	app.use(bodyParser());
 	app.use(methodOverride());
 	app.use(app.router);
+	routes(app);
 	var server = app.listen(appConfig.port, function() {
 		console.log("Listening on port %d", server.address().port);
 	});
