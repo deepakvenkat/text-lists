@@ -9,4 +9,6 @@ module.exports = function (app) {
 
 	//Nexmo callback
 	app.get("/api/nexmo/inbound", nexmoHandler.handleIncomingMessage);
+
+	app.post('api/nexmo/inbound', nexmoHandler.handleIncomingMessage);
 };
